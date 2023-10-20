@@ -7,11 +7,12 @@ interface cardProps {
 
 const GameCard: React.FC<cardProps> = ({ name, image }) => {
     const linkPath = name.replace(/\s/g, '').toLowerCase();
+
     return (
         <Link href={linkPath} className="relative h-80 w-80 bg-white rounded-lg hover:border-amber-400 hover:border-4 cursor-pointer transition-all duration-200 overflow-hidden ">
 
             <img src={image} alt="GameImage" className="object-cover h-full w-full brightness-50" />
-
+            {linkPath.includes('ludo') || linkPath.includes('lango') ? <p className="absolute bottom-32 mx-10 text-4xl font-semibold text-orange-300 text-center tracking-widest ">Coming Soon</p> : ''}
             <p className="absolute bottom-0 m-5 text-3xl font-serif font-extralight text-amber-300 tracking-widest ">{name}</p>
         </Link>
     )
