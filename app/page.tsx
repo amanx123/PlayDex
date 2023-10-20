@@ -18,8 +18,7 @@ export default function Home() {
       <span className='flex items-center justify-center mt-10 text-2xl font-bold font-mono'>
         All Games
       </span>
-
-      <main className='p-10 flex gap-10 items-center justify-center flex-wrap'>
+      <main className='max-w-[1300px] mx-auto p-10 flex gap-10 items-center justify-center flex-wrap'>
         {games.map((game, key) => (
           <GameCard key={key} name={game.name} image={game.image} />
         ))}
