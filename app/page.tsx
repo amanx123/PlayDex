@@ -24,7 +24,7 @@ export default function Home() {
         ))}
       </main> */}
       {/* Maintenance */}
-      <div className='flex items-center justify-center text-4xl font-bold mx-auto h-screen'>
+      <div className='flex items-center justify-center text-4xl font-bold mx-auto h-screen flex-wrap px-8'>
         Under Maintenance , will launch soon.
       </div>
 
