@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <header className='h-20 py-10 flex items-center justify-center bg-orange-600 text-5xl tracking-wider font-extrabold text-amber-200'>
+      {/* <header className='h-20 py-10 flex items-center justify-center bg-orange-600 text-5xl tracking-wider font-extrabold text-amber-200'>
         PLAYDEX
       </header>
       <span className='flex items-center justify-center mt-10 text-2xl font-bold font-mono'>
@@ -22,7 +22,11 @@ export default function Home() {
         {games.map((game, key) => (
           <GameCard key={key} name={game.name} image={game.image} />
         ))}
-      </main>
+      </main> */}
+      {/* Maintenance */}
+      <div className='flex items-center justify-center text-4xl font-bold mx-auto h-screen'>
+        Under Maintenance , will launch soon.
+      </div>
 
     </>
   )
